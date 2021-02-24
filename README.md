@@ -1,6 +1,8 @@
 A repository of coding challenges/tasks I came across in various job interviews.
 I mostly do backend programming in Go and PHP, so here you can find some solutions.
 
+The solutions to the tasks do not fulfill to be the shortest, fastest or cleanest solutions.
+
 ## Tasks
 
 Each task should come with a solution plus some tests to verify.
@@ -32,3 +34,8 @@ Create a calculator for [Reverse Polish Notation](https://en.wikipedia.org/wiki/
 * Check for invalid syntax, like `2 3+`. There is a space missing.
 * Return 0 (integer) when nothing is entered
 * Return the numeric value when no operand is given
+
+## Contribute
+
+Feel free to contribute. Use the issue list to propose new tasks or open PRs. Just provide proper tests 
+and description and requirements for the tasks.
