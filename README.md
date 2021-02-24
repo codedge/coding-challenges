@@ -28,12 +28,13 @@ Ordinal numbers in English have something like `st`, `nd`, `rd`, etc.
 ### Task 3
 
 Create a calculator for [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation).
+Write a `calculate` function that accepts an input and returns the result of the operation.
 
 **Requirements:**
 * Support the mathematical operations for `+`, `-`, `*` and `/`
 * Check for invalid syntax, like `2 3+`. There is a space missing.
 * Return 0 (integer) when nothing is entered
-* Return the numeric value when no operand is given
+* Return the numeric value when no operand is given, like `1 2 3.5` return `3.5`
 
 ## Contribute
 
