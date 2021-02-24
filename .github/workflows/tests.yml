@@ -1,0 +1,36 @@
+name: Tests
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['8.0']
+        dependency-version: [prefer-stable]
+    name: P${{ matrix.php }} - ${{ matrix.dependency-version }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.3.4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2.1.4
+        with:
+          path: ~/.composer/cache/files
+          key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+
+      - name: Install dependencies
+        run: composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
+        working-directory: src/php
+
+      - name: Run tests
+        run: composer test
+        working-directory: src/php

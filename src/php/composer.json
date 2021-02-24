@@ -1,0 +1,23 @@
+{
+    "name": "codedge/coding-challenges",
+    "author": "Holger Lösken <holger.loesken@codedge.de>",
+    "require": {
+        "php": "^8.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "files": [
+            "t1/s1.php",
+            "t2/s1.php",
+            "t3/s1.php"
+        ],
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    }
+}
