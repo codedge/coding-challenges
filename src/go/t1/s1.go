@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"strconv"
 	"strings"
 )
@@ -30,22 +28,4 @@ func Maskify(cc string) string {
 	}
 
 	return strings.Join(masked, "")
-}
-
-func main()  {
-	cc := ""
-
-	if len(os.Args) > 1 {
-		cc = os.Args[1]
-	} else {
-		os.Exit(0)
-	}
-
-	// Do no mask if cc less than 6 or empty string
-	if len(cc) < 6 {
-		fmt.Println(cc)
-		os.Exit(0)
-	}
-
-	fmt.Printf(Maskify(cc))
 }
