@@ -78,9 +78,3 @@ func IsValidElement(element string, validOperations []string) bool {
 
 	return true
 }
-
-func main() {
-	r, _:= Calculate("6 3 /")
-
-	fmt.Printf("ergebnis: %v", r)
-}
