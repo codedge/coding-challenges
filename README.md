@@ -12,10 +12,11 @@ Each task should come with a solution plus some tests to verify.
 Create a function `maskify` to mask digits of a credit card number with `#`.
 
 **Requirements:**
-* Do not mask the first digit and the last four digits
-* Do not mask non-digit chars
-* Do not mask if the input is less than 6
-* Return '' when input is empty
+
+- Do not mask the first digit and the last four digits
+- Do not mask non-digit chars
+- Do not mask if the input is less than 6
+- Return '' when input is empty
 
 ### Task 2
 
@@ -23,7 +24,8 @@ Create a function `number_to_ordinal` to create an ordinal number for a given in
 Ordinal numbers in English have something like `st`, `nd`, `rd`, etc.
 
 **Requirements:**
-* Apply for number 1 to 1001... if that works any given number will do ;-)
+
+- Apply for number 1 to 1001... if that works any given number will do ;-)
 
 ### Task 3
 
@@ -31,22 +33,24 @@ Create a calculator for [Reverse Polish Notation](https://en.wikipedia.org/wiki/
 Write a `calculate` function that accepts an input and returns the result of the operation.
 
 **Requirements:**
-* Support the mathematical operations for `+`, `-`, `*` and `/`
-* Check for invalid syntax, like `2 3+`. There is a space missing.
-* Return 0 (integer) when nothing is entered
-* Return the numeric value when no operand is given, like `1 2 3.5` return `3.5`
+
+- Support the mathematical operations for `+`, `-`, `*` and `/`
+- Check for invalid syntax, like `2 3+`. There is a space missing.
+- Return 0 (integer) when nothing is entered
+- Return the numeric value when no operand is given, like `1 2 3.5` return `3.5`
 
 ### Task 4
 
 Given you have an array of numbers, you move inside the array by the value of the current element.
 Write a function `jump_out_of_array` that outputs
 
-* the amount of jumps until you jump out of the array
-* `-1` when you reach the end of the array but do not jump out
+- the amount of jumps until you jump out of the array
+- `-1` when you reach the end of the array but do not jump out
 
-**Requirements:**
-* Array size is indefinite
-* Array elements are integers, positive and negative
+** Requirements:**
+
+- Array size is indefinite
+- Array elements are integers, positive and negative
 
 **Example:**
 
@@ -71,10 +75,7 @@ of pairs.
 _Do not_ use nested loops to solve this problem, because of a time complexity of the loop solution.
 [Check this thread](https://stackoverflow.com/questions/11032015/how-to-find-time-complexity-of-an-algorithm) to see what time complexity of an algorithm means.
 
-
 **Example:**
-
-Given a number `6` and an array `A[1, 8, -3, 0, 1, 3, -2, 4, 5]` the amount of pairs is `7`.
 
 * `A[0]` + `A[8]` = `1` + `5` = `6`
 * `A[1]` + `A[6]` = `8` + `-2` = `6`
@@ -86,5 +87,5 @@ Given a number `6` and an array `A[1, 8, -3, 0, 1, 3, -2, 4, 5]` the amount of p
 
 ## Contribute
 
-Feel free to contribute. Use the issue list to propose new tasks or open PRs. Just provide proper tests 
+Feel free to contribute. Use the issue list to propose new tasks or open PRs. Just provide proper tests
 and description and requirements for the tasks.
