@@ -47,7 +47,7 @@ Write a function `jump_out_of_array` that outputs
 - the amount of jumps until you jump out of the array
 - `-1` when you reach the end of the array but do not jump out
 
-** Requirements:**
+**Requirements:**
 
 - Array size is indefinite
 - Array elements are integers, positive and negative
@@ -84,6 +84,8 @@ _Do not_ use nested loops to solve this problem, because of a time complexity of
 - `A[5]` + `A[5]` = `3` + `3` = `6`
 - `A[6]` + `A[1]` = `-2` + `8` = `6`
 - `A[8]` + `A[0]` = `5` + `1` = `6`
+
+The result here is `7`.
 
 ## Contribute
 
