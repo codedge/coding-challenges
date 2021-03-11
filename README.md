@@ -94,12 +94,12 @@ and return the last `6` non-zero numbers.
 
 **Requirements:**
 
-* Throw an exception when passing in a negative number
+- Throw an exception when passing in a negative number
 
 **Example:**
 
-* `F8` = `21`, return `21`
-* `F38` = `39088169`, return `88169`
+- `F8` = `21`, return `21`
+- `F38` = `39088169`, return `88169`
 
 ## Contribute
 
