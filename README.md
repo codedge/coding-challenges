@@ -87,6 +87,20 @@ _Do not_ use nested loops to solve this problem, because of a time complexity of
 
 The result here is `7`.
 
+### Task 6
+
+Calculate the [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) of a given number
+and return the last `6` non-zero numbers.
+
+**Requirements:**
+
+* Throw an exception when passing in a negative number
+
+**Example:**
+
+* `F8` = `21`, return `21`
+* `F38` = `39088169`, return `88169`
+
 ## Contribute
 
 Feel free to contribute. Use the issue list to propose new tasks or open PRs. Just provide proper tests
