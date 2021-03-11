@@ -94,6 +94,7 @@ and return the last `6` non-zero numbers.
 
 **Requirements:**
 
+- Use a recursive approach instead of looping through.
 - Throw an exception when passing in a negative number
 
 **Example:**
