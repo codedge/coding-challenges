@@ -44,7 +44,7 @@ Write a function `jump_out_of_array` that outputs
 * the amount of jumps until you jump out of the array
 * `-1` when you reach the end of the array but do not jump out
 
-** Requirements:**
+**Requirements:**
 * Array size is indefinite
 * Array elements are integers, positive and negative
 
@@ -54,12 +54,35 @@ Given an array of `A[2, 3, -1, 1, 6, 4]`.
 
 ![](./docs/t4/task4.png)
 
-* Jump 1: A[0] + 2 = A[2]
-* Jump 2: A[2] + (-1) = A[1]
-* Jump 3: A[1] + 3 = A[4]
-* Jump 4: A[4] + 6 = out of range
+* Jump 1: `A[0]` + `2` = `A[2]`
+* Jump 2: `A[2]` + `(-1)` = `A[1]`
+* Jump 3: `A[1]` + `3` = `A[4]`
+* Jump 4: `A[4]` + `6` = out of range
 
-So the result is `4`, you need 4 jumps to jump out of the array.
+So the result is `4`, you need `4` jumps to jump out of the array.
+
+### Task 5
+
+Find the k-complement pairs in an array of a given number. Write a function `k_complement` that that outputs the amount
+of pairs.
+
+**Requirements:**
+
+_Do not_ use nested loops to solve this problem, because of a time complexity of the loop solution.
+[Check this thread](https://stackoverflow.com/questions/11032015/how-to-find-time-complexity-of-an-algorithm) to see what time complexity of an algorithm means.
+
+
+**Example:**
+
+Given a number `6` and an array `A[1, 8, -3, 0, 1, 3, -2, 4, 5]` the amount of pairs is `7`.
+
+* `A[0]` + `A[8]` = `1` + `5` = `6`
+* `A[1]` + `A[6]` = `8` + `-2` = `6`
+* `A[4]` + `A[8]` = `1` + `5` = `6`
+* `A[5]` + `A[5]` = `3` + `3` = `6`
+* `A[5]` + `A[5]` = `3` + `3` = `6`
+* `A[6]` + `A[1]` = `-2` + `8` = `6`
+* `A[8]` + `A[0]` = `5` + `1` = `6`
 
 ## Contribute
 
