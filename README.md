@@ -102,6 +102,26 @@ and return the last `6` non-zero numbers.
 - `F8` = `21`, return `21`
 - `F38` = `39088169`, return `88169`
 
+### Task 7
+
+Given the follwing function you should suggest what could be improved. There are no other documents explaining why this function has been written or what the purpose is/should be.
+
+```python
+def multiply(x, y):
+    if y > 0:
+        return (1 + multiply(x, y-1))
+    else:
+        return 0
+```
+
+**Possible considerations:**
+
+- Does the function really _multiply_ two values?
+- Could the in-built multiply function be used?
+- Is a recursive function the way to go?
+- What can happen when using this with big numbers, f. ex. > 1.000.000?
+- Type hints
+
 ## Contribute
 
 Feel free to contribute. Use the issue list to propose new tasks or open PRs. Just provide proper tests
