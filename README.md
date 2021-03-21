@@ -107,6 +107,7 @@ and return the last `6` non-zero numbers.
 Given the follwing function you should suggest what could be improved. There are no other documents explaining why this function has been written or what the purpose is/should be.
 
 **Example in python**
+
 ```python
 def multiply(x, y):
     if y > 0:
@@ -126,7 +127,7 @@ def multiply(x, y):
 ### Task 8
 
 Do an in-place mirroring of a one dimensional array. In-place switching is key here as the input array can be very big
-and no additional memory should be occupied - 
+and no additional memory should be occupied -
 
 **Requirements:**
 
