@@ -106,6 +106,7 @@ and return the last `6` non-zero numbers.
 
 Given the follwing function you should suggest what could be improved. There are no other documents explaining why this function has been written or what the purpose is/should be.
 
+**Example in python**
 ```python
 def multiply(x, y):
     if y > 0:
@@ -121,6 +122,22 @@ def multiply(x, y):
 - Is a recursive function the way to go?
 - What can happen when using this with big numbers, f. ex. > 1.000.000?
 - Type hints
+
+### Task 8
+
+Do an in-place mirroring of a one dimensional array. In-place switching is key here as the input array can be very big
+and no additional memory should be occupied - 
+
+**Requirements:**
+
+- In-place mirroring
+- Handle array with even and odd amount of items
+- Do not use the [`array_reverse`](https://www.php.net/manual/de/function.array-reverse.php) function in PHP
+
+**Example:**
+
+- Even amount: `[8,5,1,4]` -> `[4,1,5,8]`
+- Odd amount: `[6,2,7,9,3]` -> `[3,9,7,2,6]`
 
 ## Contribute
 

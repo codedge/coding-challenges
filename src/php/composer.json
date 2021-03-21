@@ -12,7 +12,8 @@
             "t3/s1.php",
             "t4/s1.php",
             "t5/s1.php",
-            "t6/s1.php"
+            "t6/s1.php",
+            "t8/s1.php"
         ],
         "psr-4": {
             "Tests\\": "tests/"
