@@ -107,6 +107,7 @@ and return the last `6` non-zero numbers.
 Given the follwing function you should suggest what could be improved. There are no other documents explaining why this function has been written or what the purpose is/should be.
 
 **Example in python**
+
 ```python
 def multiply(x, y):
     if y > 0:
