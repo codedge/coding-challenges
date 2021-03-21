@@ -126,7 +126,7 @@ def multiply(x, y):
 ### Task 8
 
 Do an in-place mirroring of a one dimensional array. In-place switching is key here as the input array can be very big
-and no additional memory should be occupied - 
+and no additional memory should be occupied - see [Space Complexity](https://www.geeksforgeeks.org/g-fact-86/).
 
 **Requirements:**
 
