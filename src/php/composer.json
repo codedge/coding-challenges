@@ -3,7 +3,7 @@
     "description": "",
     "require": {
         "php": "^8.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.6"
     },
     "autoload-dev": {
         "files": [
